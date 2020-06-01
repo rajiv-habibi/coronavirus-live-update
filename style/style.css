@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700;800&family=Montserrat:wght@500;600&family=Sen:wght@700&display=swap");
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  width: 80%;
+  margin: auto;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .logo img {
+  padding-top: 17px;
+  width: 100px;
+  cursor: pointer;
+}
+
+header nav ul {
+  padding-top: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+}
+
+header nav ul li {
+  color: #747474;
+  font-size: 14px;
+  font-family: "Baloo Thambi 2", cursive;
+  font-weight: 600;
+}
+
+header nav ul li a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #747474;
+  position: relative;
+}
+
+header nav ul li a::before {
+  content: "";
+  visibility: hidden;
+  bottom: -10px;
+  width: 15px;
+  height: 3px;
+  background-color: #2E3643;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+  position: absolute;
+}
+
+header nav ul li a:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+header h1 {
+  margin-top: 3em;
+  font-family: "Baloo Thambi 2", cursive;
+  font-weight: 500;
+  color: #2E3643;
+  font-size: 40px;
+}
+
+header h3 {
+  margin-top: -10px;
+  font-family: "Baloo Thambi 2", cursive;
+  font-size: 20px;
+  color: #9A9A9A;
+  font-weight: 400;
+}
+
+header .cta-container {
+  margin-top: -2em;
+  cursor: pointer;
+}
+
+header .cta-container .cta-button {
+  background-color: #F84B4B;
+  width: 140px;
+  height: 36px;
+  border-radius: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .cta-container .cta-button h1 {
+  font-family: "Baloo Thambi 2", cursive;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+header .cta-container .cta-button h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+header .cta-container .cta-button:hover {
+  background-color: #FC6B6B;
+}
+
+header .header-image {
+  position: relative;
+}
+
+header .header-image img {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  margin-top: 10em;
+}
+
+main h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+main .search {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .search input {
+  width: 209px;
+  height: 39px;
+  background-color: #D8D8D8;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  color: #222861;
+  font-size: 15px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+}
+
+main .search input::-webkit-input-placeholder {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 14px;
+}
+
+main .search input:-ms-input-placeholder {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 14px;
+}
+
+main .search input::-ms-input-placeholder {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 14px;
+}
+
+main .search input::placeholder {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 14px;
+}
+
+main .search button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+main .search button img {
+  width: 41px;
+  margin-left: 2em;
+}
+
+main .country-container {
+  margin-top: 2em;
+  width: 113px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #51589F;
+}
+
+main .country-container h1 {
+  font-family: "Baloo Thambi 2", cursive;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  padding: 4px;
+}
+
+main ul {
+  list-style-type: none;
+}
+
+main ul li .card {
+  border-radius: 20px;
+  margin-top: 5em;
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  font-family: "Montserrat", sans-serif;
+}
+
+main ul li .card h3 {
+  color: #F1F1F1;
+  padding: 10px 0 10px 20px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+main ul li .card h4 {
+  text-align: center;
+  font-weight: 600;
+  padding: 5px 0 25px 3em;
+  color: white;
+  font-size: 32px;
+}
+
+main ul li .blue {
+  background-color: #4642C9;
+}
+
+main ul li .green {
+  background-color: #67D65E;
+}
+
+main ul li .red {
+  background-color: #E54062;
+}
+
+main .tips-container {
+  margin-top: 13em;
+}
+
+main .tips-container h3 {
+  font-family: "Baloo Thambi 2", cursive;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: -5px;
+  color: #A8A8A8;
+}
+
+main .tips-container h2 {
+  margin-bottom: -15px;
+  font-family: "Baloo Thambi 2", cursive;
+  font-size: 23px;
+  font-weight: 500;
+  color: #222861;
+}
+
+main .tips-container h1 {
+  font-family: "Baloo Thambi 2", cursive;
+  font-size: 35px;
+  font-weight: 800;
+  color: #222861;
+}
+
+main .tips-list {
+  text-align: center;
+}
+
+main .tips-list ul li {
+  margin-top: 4em;
+}
+
+main .tips-list ul li img {
+  width: 189px;
+}
+
+main .tips-list ul li p {
+  margin-top: 1em;
+  font-family: "Baloo Thambi 2", cursive;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+}
+
+footer {
+  margin-top: 8em;
+}
+
+footer h3 {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #3B46B9;
+  color: white;
+  font-family: "Baloo Thambi 2", cursive;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+footer .social-media {
+  display: none;
+}
+
+footer .email {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  header nav .logo img {
+    width: 120px;
+  }
+  header nav ul li {
+    margin-left: 50px;
+    font-size: 15px;
+  }
+  header .head-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .head-container .header-image img {
+    width: 80%;
+    text-align: right;
+    margin-left: 5em;
+  }
+  main .cards ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .cards ul li .card {
+    width: 80%;
+    height: 8em;
+  }
+  main .cards ul li .card h4 {
+    font-size: 40px;
+  }
+  main .tips-container h3 {
+    font-size: 15px;
+  }
+  main .tips-container h2 {
+    font-size: 30px;
+  }
+  main .tips-container h1 {
+    font-size: 40px;
+  }
+  main .tips-container .tips-list li {
+    margin-top: 8em;
+  }
+  main .tips-container .tips-list li img {
+    width: 220px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header nav {
+    margin-top: 10px;
+  }
+  header .head-container .left-content h1 {
+    font-size: 60px;
+  }
+  header .head-container .left-content h3 {
+    margin-top: -12px;
+    font-size: 24px;
+  }
+  header .head-container .left-content .cta-container .cta-button {
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+  }
+  header .head-container .left-content .cta-container .cta-button h1 {
+    font-size: 25px;
+  }
+  header .head-container .header-image img {
+    margin-left: 12em;
+    width: 75%;
+  }
+  main .cards ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .cards ul li .card {
+    width: 20em;
+  }
+  main .cards ul li .card h4 {
+    margin-left: -2em;
+  }
+  main .tips-list ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .tips-list ul li:nth-child(3) img {
+    width: 230px;
+  }
+  footer {
+    margin-top: 13em;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  header nav ul li a {
+    font-size: 16px;
+    padding-right: 2em;
+  }
+  header .head-container .header-image img {
+    margin-left: 22em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
